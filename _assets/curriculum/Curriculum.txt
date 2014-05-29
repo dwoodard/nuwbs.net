@@ -1,0 +1,44 @@
+Curriculum
+
+Work Environment:
+
+Sublime Text
+	a. Emmet Syntax
+	b. Hotkeys and Shortcuts
+
+WAMP/MAMP
+	a. Installation
+	b. Folder Structure/Organization
+	c. Potential Issues/basic troubleshooting
+
+Vagrant
+	a. Installation
+	b. Folder Structure/Organization
+	c. Potential Issues/basic troubleshooting
+
+Other tools
+	a. Choclatey
+	b. Putty
+	c. Color Cop
+	d. etc...
+
+Git
+	a. Project workflow
+	b. Tortoise Git
+	c. Rolling back
+	d. branching
+	e. git diff
+	f. etc...
+
+Chrome
+	a. Extensions
+		1. Live Page
+		2. Turn off JS
+		3. Green Shot
+		4. Postman
+		5. Balsamiq
+	b. Developer tools
+		1. Troubleshooting in the browser
+		2. Using tools to find the data you need and use it. (there's a lot more to that one!)
+
+Doskey
