@@ -1,5 +1,10 @@
 Curriculum
 
+Teach Yourself Programming in Ten Years - http://norvig.com/21-days.html
+10000 hours / 8 hours per day = 3.422 years
+
+
+
 Work Environment:
 
 Sublime Text
