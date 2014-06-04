@@ -34,3 +34,10 @@ Lynda.com - http://www.lynda.com/plans
 Slogans
 	- You wanna code, We wanna teach... I think we can work this out.
 
+
+Saas
+* newrelic.com
+* bugsnag.com
+* Mailchimp (new letters)
+* mandrillapp.com (good for transanctions [signup (send hello), cancel (send goodbye)])
+* nuwbs.uservoice.com
