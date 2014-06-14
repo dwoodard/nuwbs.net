@@ -1,0 +1,30 @@
+Tutorial FlowChart, a template for authors submitting tutorials to follow.
+
+Introduction
+
+"My name is ______ and welcome to NUWBS"
+
+BRIEF OVERVIEW
+
+1.What are we making today?
+2. Languages/Assets Used
+
+Ex:
+"My name is Jack, and welcome to Nuwbs! Today we are going to make
+a web page with a full image background, using HTML and CSS."
+
+MAIN INSTRUCTION:
+(suggestions)
+1. No Swearing.
+2. No Time limit.
+3. Speak clearly and steadily.
+4. Don't move from screen to screen too fast.
+5. Stick to your main objective, don't stray.
+
+
+RECAP:
+
+1.Repeat objective.
+2. Briefly repeat how you accomplished objective.
+3. Repeat name and signout.
+
