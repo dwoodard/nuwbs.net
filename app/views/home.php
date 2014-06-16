@@ -47,10 +47,11 @@
 		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
 		ga('create', 'UA-51962969-1', 'nuwbs.net');
+		ga('require', 'displayfeatures');
 		ga('send', 'pageview');
 
 	</script>
-	
+
 
 </body>
 </html>
