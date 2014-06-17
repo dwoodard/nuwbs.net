@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Laravel PHP Framework</title>
+	<title>Nuwbs Tutorials</title>
 	<style>
 		@import url(//fonts.googleapis.com/css?family=Lato:700);
 
@@ -45,6 +45,7 @@
 
 	</div>
 
+<<<<<<< HEAD
 <!-- Begin MailChimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
 <style type="text/css">
@@ -271,6 +272,32 @@ function mce_success_cb(resp){
 <!--End mc_embed_signup-->
 
 
+=======
+
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-51962969-1', 'nuwbs.net');
+		ga('require', 'displayfeatures');
+		ga('send', 'pageview');
+
+	</script>
+
+	<script>
+		UserVoice=window.UserVoice||[];(function(){var uv=document.createElement('script');uv.type='text/javascript';uv.async=true;uv.src='//widget.uservoice.com/UFydGZ02kpLpzhhhHt7cbA.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(uv,s)})();
+		UserVoice.push(['set', {
+			accent_color: '#448dd6',
+			trigger_color: 'white',
+			trigger_background_color: 'rgba(46, 49, 51, 0.6)'
+		}]);
+		UserVoice.push(['identify', {}]);
+		UserVoice.push(['addTrigger', { mode: 'contact', trigger_position: 'bottom-right' }]);
+		UserVoice.push(['autoprompt', {}]);
+	</script>
+>>>>>>> 065131a1aa94fc2007277d129e2959d3ef5b273b
 
 </body>
 </html>
