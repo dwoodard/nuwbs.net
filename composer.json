@@ -10,8 +10,6 @@
 		"google/apiclient": "1.0.*@dev"
 	},
 	"require-dev": {
-		"mockery/mockery": "dev-master",
-		"phpunit/phpunit": "3.7.*@dev",
 		"way/generators": "dev-master",
 		"barryvdh/laravel-ide-helper": "1.*"
 	},

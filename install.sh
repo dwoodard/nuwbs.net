@@ -1,10 +1,6 @@
 #!/usr/bin/env bash
 
 echo "------------------ Good morning, Let's get to work. Installing now. ------------------"
-
-
-
-
 echo "------------------ Updating packages list ------------------"
 sudo apt-get update
 
@@ -33,9 +29,14 @@ echo "------------------ Installing and configuring Xdebug ------------------"
 sudo apt-get install -y php5-xdebug
 
 cat << EOF | sudo tee -a /etc/php5/mods-available/xdebug.ini
-xdebug.scream=1
-xdebug.cli_color=1
-xdebug.show_local_vars=1
+xdebug.default_enable = 1
+xdebug.idekey = "vagrant"
+xdebug.remote_enable = 1
+xdebug.remote_autostart = 0
+xdebug.remote_port = 9000
+xdebug.remote_handler=dbgp
+xdebug.remote_log="/var/log/xdebug/xdebug.log"
+xdebug.remote_host=10.0.2.2
 EOF
 
 
@@ -99,67 +100,6 @@ echo "------------------ Composer is the future. But you knew that did you Nice 
 curl -sS https://getcomposer.org/installer | php
 sudo mv composer.phar /usr/local/bin/composer
 
-
-# echo "------------------ FFMPEG  ------------------"
-# sudo apt-get install -y ffmpeg
-# sudo apt-get update
-# sudo apt-get install -y libavcodec-extra-52 libavdevice-extra-52 libavfilter-extra-0 libavformat-extra-52 libavutil-extra-49 libpostproc-extra-51 libswscale-extra-0
-# sudo apt-get install -y libavcodec-extra-53
-
 echo "------------------ Correct Time  ------------------"
 echo "America/Denver" | sudo tee /etc/timezone
 sudo dpkg-reconfigure --frontend noninteractive tzdata
-
-echo "------------------ INSTALL BEANSTALKD  ------------------"
-echo "------------------ INSTALL SUPERVISORD  ------------------"
-sudo apt-get update
-sudo apt-get install -y beanstalkd
-sudo sed -i "s/.*#START.*/START yes/" /etc/default/beanstalkd
-
-sudo apt-get install -y python-setuptools
-sudo easy_install supervisor
-sudo apt-get install -y supervisord
-
-
-sudo tee -a /etc/supervisord.conf <<SUPERVISORD
-[supervisord]
-logfile=/tmp/supervisord.log ; (main log file;default $CWD/supervisord.log)
-logfile_maxbytes=50MB        ; (max main logfile bytes b4 rotation;default 50MB)
-logfile_backups=10           ; (num of main logfile rotation backups;default 10)
-loglevel=info                ; (log level;default info; others: debug,warn,trace)
-pidfile=/tmp/supervisord.pid ; (supervisord pidfile;default supervisord.pid)
-nodaemon=false               ; (start in foreground if true;default false)
-minfds=1024                  ; (min. avail startup file descriptors;default 1024)
-minprocs=200                 ; (min. avail process descriptors;default 200)
-
-[program:laravel]
-command=php artisan queue:listen --timeout=14400
-process_name=%(program_name)s%(process_num)s
-numprocs=2
-numprocs_start=2
-directory=/vagrant
-autostart=true
-autorestart=true
-exitcodes=2
-user=root
-
-[program:beanstalkdService]
-command=sudo beanstalkd -l 127.0.0.1 -p 11300
-process_name=%(program_name)s%(process_num)s
-numprocs=1
-numprocs_start=1
-directory=/
-autostart=true
-autorestart=true
-exitcodes=2
-user=root
-SUPERVISORD
-
-
-sudo wget -O /etc/init.d/beanstalkd https://gist.github.com/dwoodard/8257582/raw/73ece556fa468d4ac05deb75b0246c3cfa00abcb/beanstalkd.init.sh
-sudo wget -O /etc/init.d/supervisord https://raw.github.com/dwoodard/beanstalkd/master/etc-init.d-supervisord
-
-sudo chmod +x /etc/init.d/supervisord
-sudo update-rc.d supervisord defaults
-
-sudo service supervisord start

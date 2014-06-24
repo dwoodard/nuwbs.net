@@ -11,29 +11,10 @@
 |
 */
 
-/*Install / Homepage*/
-Route::get('/', array('as' => 'home', function(){
-	if(file_exists(base_path() . '/app/config/database.php')) {
-		return View::make('home');
-	} else {
+Route::get('/', function()
+{
 
-		return Redirect::route('install');
-	}
-}));
-
-Route::get('/install', array( 'as' => 'install', function() {
-	echo "Install Me!";
-}));
-
-//Run Laravel Commands after Setup
-Route::post('/app/install', array( 'as' => 'app/install', function() {
-	$result =  Artisan::call('app:install');
-	if ($result == 0 ) {
-		echo '{"status" : "success"}';
-	} else {
-		echo '{"status" : "error"}';
-	}
-}));
-
-
-
+//    var_dump($_ENV);
+    var_dump(Config::get('database.connections.mysql'));
+    var_dump(Config::get('queue.connections.iron'));
+});
