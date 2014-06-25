@@ -14,7 +14,13 @@
 Route::get('/', function()
 {
 
-//    var_dump($_ENV);
+
+});
+
+Route::get('/ev', function()
+{
+
+    var_dump(App::environment());
     var_dump(Config::get('database.connections.mysql'));
     var_dump(Config::get('queue.connections.iron'));
 });

@@ -7,7 +7,8 @@
 		"laravel/framework": "4.2.*",
 		"cartalyst/sentry": "v2.1.0",
 		"thujohn/analytics": "dev-master",
-		"google/apiclient": "1.0.*@dev"
+		"google/apiclient": "1.0.*@dev",
+        "bugsnag/bugsnag-laravel": "1.*"
 	},
 	"require-dev": {
 		"way/generators": "dev-master",

@@ -11,6 +11,8 @@
 |
 */
 
+use Cartalyst\Sentry\Facades\FuelPHP\Sentry;
+
 ClassLoader::addDirectories(array(
 
 	app_path().'/commands',
@@ -79,3 +81,9 @@ App::down(function()
 */
 
 require app_path().'/filters.php';
+
+//Bugsnag Info
+//$app['bugsnag']->setUserId(Auth::user()->username);
+$app['bugsnag']->setReleaseStage(App::environment());
+$app['bugsnag']->setProjectRoot(app_path());
+$app['bugsnag']->setErrorReportingLevel(E_ALL & ~E_NOTICE);

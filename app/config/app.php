@@ -123,9 +123,10 @@ return array(
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 
 		//Custom Providers
-		'Way\Generators\GeneratorsServiceProvider',
-		'Cartalyst\Sentry\SentryServiceProvider',
-		'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
+        'Bugsnag\BugsnagLaravel\BugsnagLaravelServiceProvider',
+        'Way\Generators\GeneratorsServiceProvider',
+        'Cartalyst\Sentry\SentryServiceProvider',
+        'Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider',
 		),
 
 	/*
@@ -195,6 +196,7 @@ return array(
 
 		//Custom Aliases
 		'Sentry'		        => 'Cartalyst\Sentry\Facades\Laravel\Sentry',
-		'Carbon'	  	        => 'Carbon\Carbon'
+		'Carbon'	  	        => 'Carbon\Carbon',
+        'Bugsnag' => 'Bugsnag\BugsnagLaravel\BugsnagFacade',
 	)
 );
