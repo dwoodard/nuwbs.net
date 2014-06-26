@@ -16,13 +16,15 @@
 	},
 	"autoload": {
 		"classmap": [
+            "app/commands",
+            "app/controllers",
             "app/database/migrations",
             "app/database/seeds"
-		]
+		],
+        "psr-4":{
+            "Nuwbs\\": "app/Nuwbs"
+        }
 	},
-    "psr-4":{
-      "Nuwbs\\":"src"
-    },
 	"scripts": {
 		"post-install-cmd": [
 			"php artisan clear-compiled",

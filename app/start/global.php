@@ -2,6 +2,22 @@
 
 /*
 |--------------------------------------------------------------------------
+| Load the Start files
+|--------------------------------------------------------------------------
+|
+| http://daylerees.com/breaking-the-mold
+|
+*/
+
+
+require_once app_path().'/Nuwbs/routes.php';
+require_once app_path().'/Nuwbs/observers.php';
+require_once app_path().'/Nuwbs/services.php';
+require_once app_path().'/Nuwbs/helpers.php';
+
+
+/*
+|--------------------------------------------------------------------------
 | Register The Laravel Class Loader
 |--------------------------------------------------------------------------
 |
@@ -11,10 +27,10 @@
 |
 */
 
-use Cartalyst\Sentry\Facades\FuelPHP\Sentry;
 
 ClassLoader::addDirectories(array(
 
+	app_path().'/database/migrations',
 	app_path().'/database/seeds',
 
 ));
@@ -66,16 +82,6 @@ App::down(function()
 	return Response::make("Be right back!", 503);
 });
 
-/*
-|--------------------------------------------------------------------------
-| Require The Filters File
-|--------------------------------------------------------------------------
-|
-| Next we will load the filters file for the application. This gives us
-| a nice separate location to store our route and application filter
-| definitions instead of putting them all in the main routes file.
-|
-*/
 
 
 //Bugsnag Info

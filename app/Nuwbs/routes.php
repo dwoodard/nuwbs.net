@@ -1,5 +1,4 @@
 <?php
-
 /*
 |--------------------------------------------------------------------------
 | Application Routes
@@ -11,16 +10,12 @@
 |
 */
 
-Route::get('/', function()
-{
 
-
-});
+Route::get('/', 'HomeController@showWelcome');
 
 Route::get('/ev', function()
 {
-
     var_dump(App::environment());
     var_dump(Config::get('database.connections.mysql'));
-    var_dump(Config::get('queue.connections.iron'));
+    var_dump(Config::get('queue'));
 });
