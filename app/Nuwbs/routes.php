@@ -11,7 +11,11 @@
 */
 
 
-Route::get('/', 'HomeController@showWelcome');
+//Route::get('/', 'HomeController@showWelcome');
+Route::get('/', function(){
+   return View::make('layouts.splash');
+
+});
 
 Route::get('/ev', function()
 {

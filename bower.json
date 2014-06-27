@@ -1,0 +1,23 @@
+{
+  "name": "nuwbs.net",
+  "version": "0.0.0",
+  "homepage": "https://github.com/dwoodard/nuwbs.net",
+  "authors": [
+    "Dustin Woodard <dustinwoodard@weber.edu>"
+  ],
+"dependencies": {
+    "jquery": "~2.1.0",
+    "jquery-ui": "~1.10.4",
+    "bootstrap": "3.1.1",
+    "underscore": "~1.6.0"
+},
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower",
+    "test",
+    "tests"
+  ]
+}
