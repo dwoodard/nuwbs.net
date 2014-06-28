@@ -14,8 +14,8 @@ body{
 }
 /*header*/
 #main-nav{
-    border-top: #90aa3c 5px solid;
-    border-bottom: #90aa3c 5px solid;
+    border-top: 5px solid #90aa3c;
+    border-bottom: 5px solid #90aa3c;
     padding: 10px 0;
 
 }
@@ -28,6 +28,14 @@ body{
 #stuff{
     border:1px solid #f5f5f5;
 }
+#counter{
+    color:#fff;
+}
+
+#mc_embed_signup{
+    border-radius: 10px;
+}
+
 /*footer*/
 /*helper*/
 

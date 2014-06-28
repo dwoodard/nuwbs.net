@@ -22,10 +22,11 @@
         <div class="row">
             <div class="col-xs-3 col-xs-offset-3">
             <div id="counter">
-                Counter
+                <h2>Nuwbs is Coming!</h2>
+                <h3>Counter</h3>
             </div>
             <!--    <div id="promo">Video</div>-->
-            <div id="mailchimp">
+            <div id="mailchimp" class="row">
                 <!-- Begin MailChimp Signup Form -->
                 <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
                 <style type="text/css">
