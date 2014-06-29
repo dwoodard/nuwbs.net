@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Document</title>
-    <link rel="stylesheet" href="/css/style.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Scada:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="/bower/normalize-css/normalize.css"/>
-    <link href='http://fonts.googleapis.com/css?family=Scada:400italic,700italic,400,700' rel='stylesheet'
-          type='text/css'>
     <link rel="stylesheet" href="/bower/bootstrap/dist/css/bootstrap.min.css"/>
-    <link rel="stylesheet" href="/bower/FlipClock/compiled/flipclock.css"/>
+    <link rel="stylesheet" href="/css/flipclock.css"/>
+    <link rel="stylesheet" href="/css/style.css"/>
 </head>
 <body>
 
@@ -22,31 +21,31 @@
 </header>
 
 <div id="content">
+
     <div class="container">
-        <div class="row">
-            <div class="col-xs-3 col-xs-offset-3">
-                <div id="counter">
-                    <h2>Nuwbs is Coming!</h2>
-                </div>
+        <div id="description" class="row">
+            <div class="col-xs-9 col-xs-offset-3">
+                <h2>Nuwbs is Coming!</h2>
+
             </div>
         </div>
-        <div class="row">
-            <div class="clock"></div>
+        <div id="counter" class="row">
+            <div class="clock col-xs-9 col-xs-offset-1"></div>
         </div>
-        <div id="Promo" class="row">
+        <div id="promo-video" class="row">
             <!--    <div id="promo">Video</div>-->
         </div>
 
         <div id="mailchimp" class="row">
             <!-- Begin MailChimp Signup Form -->
             <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
-            <div id="mc_embed_signup">
+            <div id="mc_embed_signup" class="col-xs-4 col-xs-offset-3">
                 <form
                     action="http://nuwbs.us8.list-manage.com/subscribe/post?u=ee95f6cfa88ac4bfcd0f6d4bd&amp;id=c6763e8b8d"
                     method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
                     target="_blank" novalidate>
                     <label for="mce-EMAIL">Interested? We'll let you know when it's ready</label>
-                    <input type="email" value="" name="EMAIL" class="email input-lg ui-spinner-input" id="mce-EMAIL"
+                    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL"
                            placeholder="Email" required>
                     <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
                     <div style="position: absolute; left: -5000px;">
