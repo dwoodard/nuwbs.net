@@ -26,11 +26,6 @@ $app = new Illuminate\Foundation\Application;
 
 $env = $app->detectEnvironment(function () {
 
-	$sapi_type = php_sapi_name();
-	if (substr($sapi_type, 0, 3) !== 'cgi') {
-		return 'testing';
-	}
-
     // Defined in the server configuration
 	if (isset($_SERVER['APP_ENVIRONMENT'])) {
 		return $_SERVER['APP_ENVIRONMENT'];
