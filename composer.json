@@ -12,11 +12,13 @@
 	},
 	"require-dev": {
 		"way/generators": "dev-master",
-		"barryvdh/laravel-ide-helper": "1.*"
+		"barryvdh/laravel-ide-helper": "1.*",
+		"phpunit/phpunit": "4.1.*"
 	},
 	"autoload": {
 		"classmap": [
             "app/commands",
+            "app/tests/phpunit",
             "app/Controllers",
             "app/database/migrations",
             "app/database/seeds"

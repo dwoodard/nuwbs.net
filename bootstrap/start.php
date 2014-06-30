@@ -26,14 +26,19 @@ $app = new Illuminate\Foundation\Application;
 
 $env = $app->detectEnvironment(function () {
 
+	$sapi_type = php_sapi_name();
+	if (substr($sapi_type, 0, 3) !== 'cgi') {
+		return 'testing';
+	}
+
     // Defined in the server configuration
-    if (isset($_SERVER['APP_ENVIRONMENT'])) {
-        return $_SERVER['APP_ENVIRONMENT'];
+	if (isset($_SERVER['APP_ENVIRONMENT'])) {
+		return $_SERVER['APP_ENVIRONMENT'];
 
         // Look for ./environment.php
-    } elseif (file_exists(__DIR__ . '/environment.php')) {
-        return include __DIR__ . '/environment.php';
-    }
+	} elseif (file_exists(__DIR__ . '/environment.php')) {
+		return include __DIR__ . '/environment.php';
+	}
 
 });
 
@@ -61,8 +66,7 @@ $app->bindInstallPaths(require __DIR__ . '/paths.php');
 |
 */
 
-$framework = $app['path.base'] .
-    '/vendor/laravel/framework/src';
+$framework = $app['path.base'] . '/vendor/laravel/framework/src';
 
 require $framework . '/Illuminate/Foundation/start.php';
 
