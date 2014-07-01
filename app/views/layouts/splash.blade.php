@@ -25,7 +25,7 @@
     <div class="container">
         <div id="description" class="row">
             <div class="col-xs-9 col-xs-offset-3">
-                <h2>Nuwbs is Coming!</h2>
+                <h2>Nuwbs is Coming Soon!</h2>
 
             </div>
         </div>
@@ -52,7 +52,7 @@
                         <input type="text"name="b_ee95f6cfa88ac4bfcd0f6d4bd_c6763e8b8d" tabindex="-1" value="">
                     </div>
                     <div class="clear">
-                        <input type="submit" value="Tell me when your ready" name="subscribe" id="mc-embedded-subscribe" class="button">
+                        <input type="submit" value="I want to know when NUWBS is ready" name="subscribe" id="mc-embedded-subscribe" class="btn btn-success">
                     </div>
                 </form>
             </div>

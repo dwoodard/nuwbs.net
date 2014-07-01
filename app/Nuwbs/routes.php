@@ -10,6 +10,12 @@
 |
 */
 
+Route::get('/test', function(){
+	$arr = Illuminate\Support\Collection::make(json_decode('{"array":[1,2,3],"boolean":true,"null":null,"number":123,"object":{"a":"b","c":"d","e":"f"},"string":"Hello World"}'));
+	$arr->push(['name' => 'Doggy', 'age' => 10]);
+	return $arr;
+});
+
 
 //Route::get('/', 'HomeController@showWelcome');
 Route::get('/', function(){
