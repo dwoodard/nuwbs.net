@@ -1,33 +1,38 @@
 var gulp = require('gulp');
-var minifycss = require('gulp-minify-css');
+var minifyCSS = require('gulp-minify-css');
 var autoprefixer = require('gulp-autoprefixer');
-// var notify = require('gulp-notify');
+var notify = require('gulp-notify');
 var gutil = require('gulp-util');
-var browserify = require('gulp-browserify');
 var rename = require('gulp-rename');
+var concat = require('gulp-concat');
+// var browserify = require('gulp-browserify');
 
 // var exec = require('child_process').exec;
 // var sys = require('sys');
 
 
-var targetCSSDir = 'public/css';
-var targetJSDir = 'public/js';
+var targetCSSDir = './public/css/';
+// var targetJSDir = 'public/js/';
 
 gulp.task('css', function(){
-	return gulp.src('public/css/style.css')
+	return gulp.src([
+        './public/bower/normalize-css/normalize.css',
+        './public/bower/bootstrap/dist/css/bootstrap.min.css',
+        './public/bower/WOW/css/libs/animate.css',
+        './public/css/base.css'
+        ])
         .pipe(autoprefixer('last 15 version'))
-        .pipe(minifycss())
-        .pipe(gulp.dest('public/css/min'))
+        .pipe(minifyCSS({keepBreaks:true}))
+        .pipe(concat('all.css'))
+        .pipe(gulp.dest(targetCSSDir))
         .pipe(notify({message: 'CSS prefixed and minified'}))
 })
 
-gulp.task('js', function(){
-	gulp.src('public/js/main.js')
-        .pipe(browserify({debug: true}))
-        .pipe(rename('public/js/bundle.js'))
-        .pipe(gulp.dest('./'))
-        .pipe(notify({message: 'Js browserified and Renamed to bundle.js'}))
-})
+// gulp.task('js', function(){
+//  gulp.src(['public/js/main.js'])
+//     .pipe(gulp.dest('./dist/'))
+//         .pipe(notify({message: 'Js browserified and Renamed to bundle.js'}))
+// })
 
 
 // gulp.task('phpunit', function(){
@@ -38,7 +43,7 @@ gulp.task('js', function(){
 
 gulp.task('watch', function(){
     gulp.watch('public/css/**/*.css', ['css']);
-    gulp.watch('public/js/**/*.js', ['js']);
+    // gulp.watch('public/js/**/*.js', ['js']);
     // gulp.watch('app/**/*.php', ['phpunit']);
 })
 

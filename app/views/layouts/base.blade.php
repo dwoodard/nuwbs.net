@@ -6,11 +6,16 @@
 
     <title>Document</title>
     <link href='http://fonts.googleapis.com/css?family=Scada:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+<!--
     <link rel="stylesheet" href="/bower/normalize-css/normalize.css"/>
     <link rel="stylesheet" href="/bower/bootstrap/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="/bower/WOW/css/libs/animate.css">
     <link rel="stylesheet" href="/css/base.css"/>
-</head>
+ -->
+
+    <link rel="stylesheet" href="/css/all.css">
+
+ </head>
 <body>
 
 

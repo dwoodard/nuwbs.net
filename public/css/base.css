@@ -18,12 +18,13 @@ body{
     border-top: 5px solid #90aa3c;
     border-bottom: 5px solid #90aa3c;
     padding: 10px 0;
-
 }
 /*content*/
 #content{
-    
+
 }
+
+
 #promo{
     padding: 0 ;
     background: url(img/diagmonds.png);

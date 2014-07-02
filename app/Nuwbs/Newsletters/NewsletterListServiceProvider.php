@@ -1,4 +1,4 @@
-<?php namespace Nuwbs\Notifications;
+<?php namespace Nuwbs\Newsletters;
 
 use Illuminate\Support\ServiceProvider;
 
