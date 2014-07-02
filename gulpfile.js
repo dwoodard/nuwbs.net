@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 var minifycss = require('gulp-minify-css');
 var autoprefixer = require('gulp-autoprefixer');
-var notify = require('gulp-notify');
+// var notify = require('gulp-notify');
 var gutil = require('gulp-util');
 var browserify = require('gulp-browserify');
 var rename = require('gulp-rename');
@@ -16,7 +16,7 @@ var targetJSDir = 'public/js';
 gulp.task('css', function(){
 	return gulp.src('public/css/style.css')
         .pipe(autoprefixer('last 15 version'))
-        .pipe(minifycss()).on('error', gutil.log)
+        .pipe(minifycss())
         .pipe(gulp.dest('public/css/min'))
         .pipe(notify({message: 'CSS prefixed and minified'}))
 })
