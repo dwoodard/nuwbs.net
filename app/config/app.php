@@ -122,7 +122,11 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 
-		//Custom Providers
+        //Custom Providers
+        'Nuwbs\Newsletters\NewsletterListServiceProvider',
+        'Nuwbs\Notifications\NotificationsServiceProvider',
+
+        //Vendors Providers
         'Bugsnag\BugsnagLaravel\BugsnagLaravelServiceProvider',
         'Way\Generators\GeneratorsServiceProvider',
         'Cartalyst\Sentry\SentryServiceProvider',

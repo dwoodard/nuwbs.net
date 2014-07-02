@@ -35,7 +35,7 @@
                 <div class="carousel-inner container">
 
 
-                        <div class="item row active">
+                        <div class="item row active col-md-8 col-sm-4 col-xs-12">
                             <img src="/img/slide1.png"/>
                             <div class="carousel-caption wow pulse">
                                 <h1 class="carousel-caption-header">Slide 1</h1>
@@ -46,7 +46,7 @@
                         </div>
 
 
-                    <div class="item row">
+                    <div class="item row col-md-8 col-sm-4 col-xs-12">
                         <img src="/img/slide1.png"/>
                         <div class="carousel-caption">
                             <h1 class="carousel-caption-header">Slide 2</h1>
@@ -56,7 +56,7 @@
                         </div>
                     </div>
 
-                    <div class="item row">
+                    <div class="item row col-md-8 col-sm-4 col-xs-12">
                         <img src="/img/slide1.png"/>
                         <div class="carousel-caption">
                             <h1 class="carousel-caption-header">Slide 3</h1>

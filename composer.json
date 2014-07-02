@@ -8,7 +8,8 @@
 		"cartalyst/sentry": "v2.1.0",
 		"thujohn/analytics": "dev-master",
 		"google/apiclient": "1.0.*@dev",
-        "bugsnag/bugsnag-laravel": "1.*"
+        "bugsnag/bugsnag-laravel": "1.*",
+		"mailchimp/mailchimp": "2.0.*"
 	},
 	"require-dev": {
 		"way/generators": "dev-master",
