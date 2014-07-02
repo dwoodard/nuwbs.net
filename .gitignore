@@ -10,3 +10,6 @@ Thumbs.db
 /.idea
 /.vagrant
 /bootstrap/environment.php
+/node_modules/*
+
+/npm-debug.log
