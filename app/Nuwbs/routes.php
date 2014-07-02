@@ -10,17 +10,19 @@
 |
 */
 
-Route::get('/test', function(){
-	$arr = Illuminate\Support\Collection::make(json_decode('{"array":[1,2,3],"boolean":true,"null":null,"number":123,"object":{"a":"b","c":"d","e":"f"},"string":"Hello World"}'));
-	$arr->push(['name' => 'Doggy', 'age' => 10]);
-	return $arr;
-});
 
 
 //Route::get('/', 'HomeController@showWelcome');
 Route::get('/', function(){
-   return View::make('layouts.splash');
+	return Redirect::to('coming-soon');
+});
 
+Route::get('/home', function(){
+	return View::make('layouts.base');
+});
+
+Route::get('/coming-soon', function(){
+	return View::make('layouts.splash');
 });
 
 Route::get('/ev', function()

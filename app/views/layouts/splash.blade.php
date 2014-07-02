@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/bower/normalize-css/normalize.css"/>
     <link rel="stylesheet" href="/bower/bootstrap/dist/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="/css/flipclock.css"/>
-    <link rel="stylesheet" href="/css/style.css"/>
+    <link rel="stylesheet" href="/css/splash.css"/>
 </head>
 <body>
 

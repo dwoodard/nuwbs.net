@@ -1,0 +1,52 @@
+/*colors
+* green - #90aa3c
+* white - #fff
+* eggshell - #f4f4f4
+* dark-grey - #242424
+* med-grey - #404040
+* light-grey - #666666
+* blue - #005aff
+*/
+
+/*General*/
+body{
+    font-family: 'Scada', sans-serif;
+    background: #f4f4f4;
+}
+/*header*/
+#main-nav{
+    border-top: 5px solid #90aa3c;
+    border-bottom: 5px solid #90aa3c;
+    padding: 10px 0;
+
+}
+/*content*/
+#content{
+    
+}
+#promo{
+    padding: 0 ;
+    background: url(img/diagmonds.png);
+    border-bottom: #90aa3c 5px solid;
+}
+#promo h2{
+    margin:0 0 10px 0;
+    color: white
+}
+#counter{
+    padding: 40px 0
+}
+#description h2{
+    color:#fff;
+}
+
+#mc_embed_signup {
+    background: #f4f4f4;
+    clear: left;
+    font: 14px Helvetica, Arial, sans-serif;
+    border-radius: 10px;
+}
+
+/*footer*/
+/*helper*/
+
