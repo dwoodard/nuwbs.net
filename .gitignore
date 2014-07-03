@@ -11,3 +11,8 @@ Thumbs.db
 /.vagrant
 /bootstrap/environment.php
 /npm-debug.log
+
+
+# has a bug on windows, it nests too deep and git can save it
+# `npm install` to install it
+/node_modules/gulp

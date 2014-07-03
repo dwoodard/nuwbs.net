@@ -21,7 +21,7 @@ gulp.task('css', function(){
         './public/bower/WOW/css/libs/animate.css',
         './public/css/base.css'
         ])
-        .pipe(autoprefixer('last 15 version'))
+        .pipe(autoprefixer('last 15 versions'))
         .pipe(minifyCSS({keepBreaks:true}))
         .pipe(concat('all.css'))
         .pipe(gulp.dest(targetCSSDir))

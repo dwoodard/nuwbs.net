@@ -46,6 +46,7 @@ body{
     clear: left;
     font: 14px Helvetica, Arial, sans-serif;
     border-radius: 10px;
+    animation: foo 1s; 
 }
 
 /*footer*/
